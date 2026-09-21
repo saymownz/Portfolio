@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Simon Gonzales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-mark" aria-label="Simon Gonzales — Home">SG</a>
+    <button class="menu-toggle" id="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navLinks" aria-label="Main">
+      <a href="index.html" class="site-nav__link">Home</a>
+      <a href="about.html" class="site-nav__link">About</a>
+      <a href="projects.html" class="site-nav__link">Projects</a>
+      <a href="contact.html" class="site-nav__link is-current" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="contact-layout">
+      <section class="card">
+        <h2>Let’s Connect</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label for="name">ENTER NAME_</label>
+            <input type="text" id="name" name="name" placeholder="YOUR NAME" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">ENTER EMAIL_</label>
+            <input type="email" id="email" name="email" placeholder="YOU@DOMAIN.COM" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">ENTER MESSAGE_</label>
+            <textarea id="message" name="message" placeholder="START TYPING..." required></textarea>
+          </div>
+          <button type="submit" class="button button--violet">SEND MESSAGE [START]</button>
+          <p class="form-note" id="formStatus" role="status" hidden>&gt; MESSAGE SENT. PLAYER 1 WILL REPLY SOON.</p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Channels</h2>
+        <div class="contact-channel"><span class="contact-channel__icon contact-channel__icon--green">GH</span><div class="contact-channel__text"><span class="contact-channel__label">GITHUB</span><span class="contact-channel__value">@saymownz</span></div></div>
+        <div class="contact-channel"><span class="contact-channel__icon contact-channel__icon--violet">in</span><div class="contact-channel__text"><span class="contact-channel__label">LINKEDIN</span><span class="contact-channel__value">/in/simongonzales</span></div></div>
+        <div class="contact-channel"><span class="contact-channel__icon contact-channel__icon--white">@</span><div class="contact-channel__text"><span class="contact-channel__label">EMAIL</span><span class="contact-channel__value">symegonzales2006@gmail.com</span></div></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Simon Gonzales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-mark" aria-label="Simon Gonzales — Home">SG</a>
+    <button class="menu-toggle" id="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navLinks" aria-label="Main">
+      <a href="index.html" class="site-nav__link">Home</a>
+      <a href="about.html" class="site-nav__link is-current" aria-current="page">About</a>
+      <a href="projects.html" class="site-nav__link">Projects</a>
+      <a href="contact.html" class="site-nav__link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="about-layout">
+      <div class="about-primary">
+        <section class="card bio-card">
+          <div class="bio-heading">
+            <!-- Replace images/avatar.jpg with your photo -->
+            <div class="profile-photo"><img src="images/avatar.jpg" alt="Photo of Simon Gonzales"></div>
+            <h2>Student Profile</h2>
+          </div>
+          <p>Greetings! I am Simon Gonzales</p>
+          <p>I study BS Computer Science at Holy Angel University</p>
+          <p>During my childhood, I was deeply inspired by the effort and creativity behind online games.</p>
+          <p>Fueled by a passion for tech giants such as Valve, Nintendo, and Sony I set out to shape a path that merges modern code with pixelated designs.</p>
+          <p class="history-heading">Character History:</p>
+          <div class="history-item"><span class="history-item__tag">ALPHA FOX:</span><span class="history-item__role">Oustanding Associate Leader (Logistics)</span></div>
+          <div class="history-item"><span class="history-item__tag">GDG:</span><span class="history-item__role">Officer (Community Development)</span></div>
+          <div class="history-item"><span class="history-item__tag">LOOP:</span><span class="history-item__role">Staff Member (Logistics)</span></div>
+        </section>
+
+        <section class="card interests-card">
+          <h2 class="card__title--small">Interests</h2>
+          <ul class="interests-list">
+            <li class="interest-row"><span class="interest-row__number interest-row__number--violet">01</span>MACHINE LEARNING</li>
+            <li class="interest-row"><span class="interest-row__number interest-row__number--green">02</span>WEB DEVELOPMENT</li>
+            <li class="interest-row"><span class="interest-row__number interest-row__number--amber">03</span>DATA ENGINEERING</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card skills-card">
+        <h2>Skills</h2>
+        <div class="skill-item">
+          <div class="skill-item__label"><span>JAVA</span><span class="skill-item__percent--violet">70%</span></div>
+          <div class="skill-meter skill-meter--violet" role="img" aria-label="Java 70 percent"><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__label"><span>PYTHON</span><span class="skill-item__percent--green">80%</span></div>
+          <div class="skill-meter skill-meter--green" role="img" aria-label="Python 80 percent"><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__label"><span>HTML &amp; CSS</span><span class="skill-item__percent--amber">80%</span></div>
+          <div class="skill-meter skill-meter--amber" role="img" aria-label="HTML and CSS 80 percent"><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> 
